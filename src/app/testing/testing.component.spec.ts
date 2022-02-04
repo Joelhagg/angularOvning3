@@ -22,4 +22,14 @@ describe('TestingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be true', () => {
+    expect(component.isMarried).toBeTrue();
+
+    component.changeMarriedStatus();
+
+    fixture.detectChanges()
+
+    expect(component.isMarried).toBeFalse()
+  })
 });

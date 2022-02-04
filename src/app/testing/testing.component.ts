@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestingComponent implements OnInit {
 
+  isMarried: boolean = true
+
+  changeMarriedStatus() {
+    this.isMarried = false
+  }
+
   constructor() { }
 
   ngOnInit(): void {
